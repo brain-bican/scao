@@ -1,0 +1,35 @@
+id: scao
+title: "Spinal Cord Atlas Ontology"
+github_org: brain-bican
+repo: scao
+#report_fail_on: ERROR
+report_fail_on: None
+use_dosdps: TRUE
+export_formats:
+  - owl
+  - obo
+  - json
+namespaces:
+  - http://purl.brain-bican.org/scao_
+release_artefacts:
+  - base
+  - full
+  - simple
+  - basic
+  - custom-ext
+import_group:
+  products:
+    - id: pr
+      is_large: TRUE
+      use_gzipped: TRUE
+    - id: cl
+    - id: go
+    - id: envo
+    - id: ro
+    - id: chebi
+      is_large: TRUE
+      use_gzipped: TRUE
+    - id: pato
+    - id: ncbitaxon
+    - id: nbo
+robot_java_args: '-Xmx8G'
